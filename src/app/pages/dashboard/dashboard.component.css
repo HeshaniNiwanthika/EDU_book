@@ -1,5 +1,56 @@
 .one{
-    height:100px;
+    height:300px;
+    width:200px;
+    background-image:url('/kidsbook.jpg') ;
+}
+.two{
+    margin-top:10px;
+    height:300px;
+    width:200px;
+    background-image:url('/novel.jpg');
+}
+.three{
+    margin-top:10px;
+    height:300px;
+    width:200px;
+    background-image:url('/english_book.jpg') ;
+}
+.four{
+    margin-top:10px;
+    height:300px;
+    width:200px;
+    background-image:url('/sinhalabook.jpg') ;
+}
+.five{
+    margin-top:10px;
+    height:300px;
+    width:200px;
+    background-image:url('/tamilbooks.jpg') ;
+}
+.six{
+    margin-top:10px;
+    height:300px;
+    width:200px;
+    background-image:url('/activitybook.jpg') ;
+}
+
+.image-container{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#Viewbtn{
+    margin-top: 279px;
+    margin-left: 50px;
     width:100px;
-    background-color: ;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Arial;
+
+
 }
