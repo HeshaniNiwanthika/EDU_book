@@ -3,26 +3,37 @@
     <div>
 
   
-    <form class="form">
+    <form class="form" [formGroup]="userForm">
        
         <label for="Name"><h3>Name</h3></label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" formControlName="Name" id="name" name="name" required><br><br>
+        <div class="text-danger">
+            @if(userForm.controls['Name'].errors?.['required']&& userForm.controls['Name'].touched){
+
+            }
+            <span style=color:red>This is required</span>
+
+        </div>
+
+
+
+
         <label for="Age"><h3>Age</h3></label>
-        <input type="text" id="Age" name="Age" required><br><br>
+        <input type="text"formControlName="Age" id="Age" name="Age" required><br><br>
         <label for="Gender"><h3>Gender</h3></label>
-        <input type="radio" id="male" name="gender" value="male">
+        <input type="radio" formControlName="Gender" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
+        <input type="radio" formControlName="Gender"id="female" name="gender" value="female">
         <label for="female">Female</label><br>
         <label for="Email"><h3>Email</h3></label>
-        <input type="text" id="Email" name="Email" required><br><br>
+        <input type="text" formControlName="Email" id="Email" name="Email" required><br><br>
         <label for="UserName"><h3>User Name</h3></label>
-        <input type="text" id="Username" name="Username" required><br><br>
+        <input type="text" formControlName="UserName"  id="Username" name="Username" required><br><br>
         <label for="Password"><h3>Password</h3></label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" formControlName="Password" id="password" name="password" required><br><br>
         <label for="Password"><h3>Password</h3></label>
-        <input type="password" id="password" name="password" required><br><br>
-        <button class="simple_btn">Save</button>
+        <input type="password"  formControlName="Password" id="password" name="password" required><br><br>
+        <button  class="simple_btn">Save</button>
 
 
     </form>
