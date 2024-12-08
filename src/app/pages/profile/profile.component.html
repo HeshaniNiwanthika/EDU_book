@@ -1,12 +1,12 @@
 <h1 class="profile">Profile</h1>
 
-    <div>
+<div>
 
   
     <form class="form" [formGroup]="userForm">
        
         <label for="Name"><h3>Name</h3></label>
-        <input type="text" formControlName="Name" id="name" name="name" required><br><br>
+        <input class="form-control" type="text" formControlName="Name" id="name" name="name" required><br><br>
         <div class="text-danger">
             @if(userForm.controls['Name'].errors?.['required']&& userForm.controls['Name'].touched){
 
@@ -19,20 +19,20 @@
 
 
         <label for="Age"><h3>Age</h3></label>
-        <input type="text"formControlName="Age" id="Age" name="Age" required><br><br>
+        <input class="form-control" type="text"formControlName="Age" id="Age" name="Age" required><br><br>
         <label for="Gender"><h3>Gender</h3></label>
         <input type="radio" formControlName="Gender" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
         <input type="radio" formControlName="Gender"id="female" name="gender" value="female">
         <label for="female">Female</label><br>
         <label for="Email"><h3>Email</h3></label>
-        <input type="text" formControlName="Email" id="Email" name="Email" required><br><br>
+        <input class="form-control" type="email" formControlName="Email" id="Email" name="Email" required><br><br>
         <label for="UserName"><h3>User Name</h3></label>
-        <input type="text" formControlName="UserName"  id="Username" name="Username" required><br><br>
+        <input class="form-control" type="text" formControlName="UserName"  id="Username" name="Username" required><br><br>
         <label for="Password"><h3>Password</h3></label>
-        <input type="password" formControlName="Password" id="password" name="password" required><br><br>
+        <input class="form-control" type="password" formControlName="Password" id="password" name="password" required><br><br>
         <label for="Password"><h3>Password</h3></label>
-        <input type="password"  formControlName="Password" id="password" name="password" required><br><br>
+        <input class="form-control" type="password"  formControlName="Password" id="password" name="password" required><br><br>
         <button  class="simple_btn">Save</button>
 
 

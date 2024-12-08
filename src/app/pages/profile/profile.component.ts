@@ -16,7 +16,7 @@ export class ProfileComponent {
         Gender:new FormControl(""),
         Email:new FormControl(""),
         Username:new FormControl(""),
-        Password:new FormControl(""[Validators.required,Validators.minLength(5)]),
+        Password:new FormControl("",[Validators.required,Validators.minLength(5)]),
 
       })
 }

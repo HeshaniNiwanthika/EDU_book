@@ -16,3 +16,9 @@
     width:100px;
     height:50px;
 }
+.form-control{
+    padding:5px;
+    margin:5px;
+    border-radius: 5px;
+    border: 1px sold #2f2f2f;
+}
